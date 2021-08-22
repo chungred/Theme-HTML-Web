@@ -1,0 +1,221 @@
+/* General */
+
+.calendar-eightysix {
+	cursor: default;
+	position: absolute;
+	z-index: 999;
+	text-align: center;
+}
+	.calendar-eightysix, .calendar-eightysix * {
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+		.calendar-eightysix .header.dragger {
+			cursor: move;
+		}
+		
+			.calendar-eightysix .header .arrow-left, .calendar-eightysix .header .arrow-right {
+				cursor: pointer;
+			}
+			.calendar-eightysix .header .arrow-left {
+				float: left;
+			}
+			.calendar-eightysix .header .arrow-right {
+				float: right;
+			}
+			
+			.calendar-eightysix .header .label {
+				display: inline-block;
+			}
+				.calendar-eightysix .header .label.clickable {
+					cursor: pointer;
+				}
+		
+		.calendar-eightysix .body {
+			position: relative;
+		}
+			.calendar-eightysix .body .inner .container {
+				position: absolute;
+				left: 0;
+			}
+				
+				.calendar-eightysix .body .inner .container .row div {
+					float: left;
+				}
+				
+					.calendar-eightysix .body .inner .container.month.pickable .row div, 
+					  .calendar-eightysix .body .inner .container.year-decade .row div {
+						cursor: pointer;
+					}
+
+/* Specifc */
+
+.calendar-eightysix.vista {
+	width: 198px;
+	height: 162px;
+	background: url('../img/vista/background.png');
+	font-family: Calibri, Helvetica, Trebuchet, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+*html .calendar-eightysix.vista {
+	background-image: url('../img/vista/background.gif');
+}
+
+	.calendar-eightysix.vista .wrapper {
+		padding: 16px;
+	}
+		
+		/* Header */
+		
+		.calendar-eightysix.vista .header {
+			height: 22px;
+		}
+		
+			.calendar-eightysix.vista .header .arrow-left, .calendar-eightysix.vista .header .arrow-right {
+				width: 12px;
+				height: 16px;
+			}
+			.calendar-eightysix.vista .header .arrow-left {
+				background: transparent url('../img/vista/arrow-left.gif') 5px 3px no-repeat;
+			}
+				.calendar-eightysix.vista .header .arrow-left:hover {
+					background-image: url('../img/vista/arrow-left-hover.gif');
+				}
+			.calendar-eightysix.vista .header .arrow-right {
+				background: transparent url('../img/vista/arrow-right.gif') 3px 3px no-repeat;
+			}
+				.calendar-eightysix.vista .header .arrow-right:hover {
+					background-image: url('../img/vista/arrow-right-hover.gif');
+				}
+			
+			.calendar-eightysix.vista .header .label.clickable:hover {
+				color: #06c;
+			}
+		
+		/* Body */
+		
+		.calendar-eightysix.vista .body {
+			height: 108px;
+		}
+			
+			.calendar-eightysix.vista .body .inner .container {
+				width: 166px;
+				height: 108px;
+			}
+			
+			/* General container */
+			
+			.calendar-eightysix.vista .body .inner .container .row {
+				width: 166px;
+			}
+			
+				.calendar-eightysix.vista .body .inner .container .row div {
+					background-color: #fff;
+				}
+			
+				.calendar-eightysix.vista .body .inner .container .row div.non-selectable,
+				  .calendar-eightysix.vista .body .inner .container .row div.non-selectable:hover {
+					color: #dcdcdc !important;
+					cursor: default !important;
+					background: none !important;
+				}
+			
+			/* Month */
+			
+			.calendar-eightysix.vista .body .inner .container.month .row {
+				height: 122px;
+				height: 15px;
+			}
+				.calendar-eightysix.vista .body .inner .container.month .row.a {
+					height: 16px;
+					border-bottom: 1px solid #f5f5f5;
+					margin-bottom: 1px;
+				}
+				
+			.calendar-eightysix.vista .body .inner .container.month .row.a div {
+				cursor: default !important;
+				color: #9c9c9c !important;
+			}
+				
+				.calendar-eightysix.vista .body .inner .container.month .row div {
+					padding-top: 1px;
+					width: 23px;
+					height: 14px;
+				}
+				
+				.calendar-eightysix.vista .body .inner .container.month .row div.outside {
+					color: #dcdcdc;
+				}				
+					.calendar-eightysix.vista .body .inner .container.month .row.a div {
+						color: #9c9c9c;
+					}
+					
+			.calendar-eightysix.vista .body .inner .container.month.pickable .row div:hover {
+				background: url('../img/vista/day.gif') top no-repeat;
+			}
+				.calendar-eightysix.vista .body .inner .container.month .row div.today {
+					background: url('../img/vista/day.gif') 0 -17px no-repeat;
+				}
+					.calendar-eightysix.vista .body .inner .container.month .row div.today:hover {
+						background: url('../img/vista/day.gif') 0 -34px no-repeat;
+					}
+				.calendar-eightysix.vista .body .inner .container.month .row div.selected {
+					background: url('../img/vista/day.gif') 0 -51px no-repeat;
+					color: #06c !important;
+				}
+					.calendar-eightysix.vista .body .inner .container.month .row div.selected:hover {
+						background: url('../img/vista/day.gif') 0 -68px no-repeat;
+					}
+				.calendar-eightysix.vista .body .inner .container.month .row div.today.selected {
+					background: url('../img/vista/day.gif') 0 -85px no-repeat;
+				}
+					.calendar-eightysix.vista .body .inner .container.month .row div.today.selected:hover {
+						background: url('../img/vista/day.gif') 0 -102px no-repeat;
+					}
+		
+			/* Year & decade */
+			
+			.calendar-eightysix.vista .body .inner .container.year-decade .row {
+				height: 36px;
+			}
+				.calendar-eightysix.vista .body .inner .container.year-decade .row div {
+					width: 41px;
+					padding-top: 11px;
+					height: 24px;
+				}
+				
+				.calendar-eightysix.vista .body .inner .container.year-decade .row div:hover {
+					background: url('../img/vista/year-decade.gif') top no-repeat;
+				}
+					.calendar-eightysix.vista .body .inner .container.year-decade .row div.today {
+						background: url('../img/vista/year-decade.gif') 0 -37px no-repeat;
+					}
+						.calendar-eightysix.vista .body .inner .container.year-decade .row div.today:hover {
+							background: url('../img/vista/year-decade.gif') 0 -74px no-repeat;
+						}
+					.calendar-eightysix.vista .body .inner .container.year-decade .row div.selected {
+						background: url('../img/vista/year-decade.gif') 0 -111px no-repeat;
+						color: #06c !important;
+					}
+						.calendar-eightysix.vista .body .inner .container.year-decade .row div.selected:hover {
+							background: url('../img/vista/year-decade.gif') 0 -149px no-repeat;
+						}
+					.calendar-eightysix.vista .body .inner .container.year-decade .row div.today.selected {
+						background: url('../img/vista/year-decade.gif') 0 -187px no-repeat;
+					}
+						.calendar-eightysix.vista .body .inner .container.year-decade .row div.today.selected:hover {
+							background: url('../img/vista/year-decade.gif') 0 -225px no-repeat;
+						}
+			
+			.calendar-eightysix.vista .body .inner .container.month.pickable .row div:hover, 
+			  .calendar-eightysix.vista .body .inner .container.year-decade .row div:hover {
+				color: #06c;
+			}
+		
+		/* Footer */
+		
+		.calendar-eightysix.vista .footer {
+			display: none;
+		}

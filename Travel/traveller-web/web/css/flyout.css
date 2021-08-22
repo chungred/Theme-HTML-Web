@@ -1,0 +1,44 @@
+
+.dropdown {
+	display:block;
+ 	position:relative;
+	font-weight:bold;
+ 	cursor:pointer;
+	background: #383838;
+	padding: 5px 4px;
+	}
+.dropdown .upperdd {border-bottom:none}
+.dropdown dd {
+	position: absolute;
+	top: 0;
+	margin-right: 10px;
+	overflow: hidden;
+	padding: 0px;
+	margin-top: 9px;
+	
+}
+.dropdown ul { 
+	list-style:none;
+	background: url(../images/sub.png) no-repeat #A1CF63 101px 5px;
+	color:#c4ff74;
+	}
+.dropdown li {
+	display:inline;
+	}
+.dropdown a{
+	display: block;
+	color: #979797;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding: 4px 27px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.dropdown a:hover { 
+	color:#fff
+	}
+.dropdown .underline {}
+.dropdown dt a{
+	font-family: 'Fauna One', serif;
+}
+

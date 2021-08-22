@@ -1,0 +1,446 @@
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+/*--reset--*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/*--start editing from here--*/
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*--end reset--*/
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	background: url(../images/banner3.jpg)no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.bg-agile {
+    width: 50%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fdfbfb;
+    word-spacing: 11px;
+    letter-spacing: 6px;
+    margin: 1.6em 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/*--reservation--*/
+.reservation-info {
+    margin-top: 8em;
+}
+.book-reservation {
+    background: rgba(10, 10, 10, 0.74);
+    padding: 35px;
+}
+h3.tittle.reserve {
+ color: #a71930;
+
+}
+.reservation-info h4 {
+    font-size: 3em;
+    color: #800000;
+    line-height: 1.6em;
+}
+.reservation-info h5 {
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.8em;
+}
+.reservation-info h5 span.glyphicon {
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+.book-reservation label {
+    font-size: 16px;
+    color: #fff;
+    /* margin-bottom: 1em; */
+    text-align: left;
+    display: inline-block;
+    float: left;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.form-date-w3-agileits {
+    width: 50%;
+    float: left;
+}
+.form-time-w3layouts {
+    width: 50%;
+    float: left;
+}
+.form-left-agileits-w3layouts {
+    width: 50%;
+    float: left;
+}
+.book-reservation label i{   
+     font-size: 1em;
+    margin-right: 10px;
+	color: #a71930;
+
+}
+.book-reservation input[type="text"],.book-reservation input[type="date"],.book-reservation input[type="time"],.book-reservation input[type="email"] {
+    width: 89%;
+    color:#9a9797;
+    outline: none;
+    font-size: 1em;
+	line-height: 25px;
+    padding: 5px 10px;
+   border: 2px solid #fff;
+    -webkit-appearance: none;
+    margin-bottom: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	background:none;
+}
+.book-reservation select.form-control {
+    outline: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    width: 95.5%;
+	line-height: 25px;
+    border-radius: 0;
+    background: none;
+    color: #9a9797;
+    border: 2px solid #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.make {
+    margin: 1em auto 0;
+    text-align: center;
+}
+.make input[type=submit] {
+    color: #FFFFFF;
+    margin-top: 3em;
+    padding: 9px 30px;
+    font-size: 1.04em;
+    cursor: pointer;
+    border: 2px solid #a71930;
+    outline: none;
+    background: #a71930;
+    font-family: 'Roboto', sans-serif;
+}
+.make input[type=submit]:hover {
+    background: none;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+.arrows-reserve{
+	    position:relative;
+		color:#EFA52C;
+		font-size:2em;
+}
+.arrows-reserve:before{
+    content: '';
+    position: absolute;
+    bottom: 43%;
+    left: 35.5%;
+    background: #fff;
+    width: 11%;
+    height: 3px;
+}
+.arrows-reserve:after{
+     content: '';
+    position: absolute;
+  bottom: 43%;
+    right: 35.5%;
+    background: #fff;
+        width: 11%;
+    height: 3px;
+}
+
+.book-reservation form {
+    margin-top: 1px;
+}
+/*--//reservation--*/
+
+/*--copyright--*/
+.copy.w3ls {
+    margin: 3em 0em;
+}
+.copy p {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.copy p a {
+    color: #a71930;
+    text-decoration: none;
+}
+.copy p a:hover {
+    color: #fff;
+}
+/*--//copyright--*/
+/*--responsive-design--*/
+@media(max-width:1680px){
+	
+}
+@media(max-width:1440px){
+	.bg-agile {
+		width: 60%;
+	}
+	h1 {
+		font-size: 33px;
+	}
+}
+@media(max-width:1366px){
+	
+}
+@media(max-width:1280px){
+	h1 {
+		font-size: 30px;
+		word-spacing: 3px;
+		letter-spacing: 5px;
+		margin: 1.5em 0;
+	}
+	.bg-agile {
+		width: 63%;
+	}
+	.book-reservation label {
+		font-size: 14px;
+	}
+	.make input[type=submit] {
+		margin-top: 2em;
+	}
+}
+@media(max-width:1080px){
+	.bg-agile {
+		width: 70%;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		line-height: 22px;
+	}
+	.make input[type=submit] {
+		margin-top: 2.5em;
+		padding: 7px 24px;
+		font-size: 1.03em;
+	}
+	.copy.w3ls {
+		margin: 2.5em 0em;
+	}
+}
+@media(max-width:1050px){
+	
+}
+@media(max-width:1024px){
+	.book-reservation {
+		padding: 28px;
+	}
+	.book-reservation label {
+		font-size: 13.4px;
+		margin-left: 9px;
+		margin-bottom: 7px;
+	}
+	.book-reservation label i {
+		margin-right: 6px;
+	}
+	h1 {
+		font-size: 27px;
+	}
+}
+@media(max-width:991px){
+	.make input[type=submit] {
+		font-size: 1em;
+	}
+}
+@media(max-width:900px){
+	.book-reservation select.form-control {
+		width: 96%;
+	}
+}
+@media(max-width:800px){
+	.bg-agile {
+		width: 79%;
+	}
+	.copy p {
+		font-size: 14.5px;
+		letter-spacing: 1.5px;
+		word-spacing: 1px;
+	}
+}
+@media(max-width:768px){
+	h1 {
+		margin: 3.5em 0;
+	}
+	.copy.w3ls {
+		margin: 5.79em 3em;
+	}
+	.copy p {
+		line-height: 31px;
+	}
+}
+@media(max-width:767px){
+	h1 {
+		font-size: 23px;
+		word-spacing: 0px;
+		letter-spacing: 3px;
+		margin: 1.18em 0;
+	}
+	.make input[type=submit] {
+		margin-top: 2.2em;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		margin-bottom: 1.1em;
+	}
+	.copy.w3ls {
+		margin: 1em 3em;
+	}
+	.book-reservation {
+		padding: 28px 28px 28px;
+	}
+}
+@media(max-width:736px){
+	.bg-agile {
+		width: 80%;
+	}
+}
+@media(max-width:667px){
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		width: 86%;
+	}
+}
+@media(max-width:640px){
+	
+}
+@media(max-width:600px){
+	.bg-agile {
+		width: 90%;
+	}
+	.copy.w3ls {
+		margin: 1em 2em;
+	}
+}
+@media(max-width:568px){
+	.copy p {
+		font-size: 14px;
+		letter-spacing: 1.2px;
+	}
+}
+@media(max-width:480px){
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		width: 84%;
+	}
+	.make input[type=submit] {
+		padding: 5px 16px;
+		font-size: .9em;
+	}
+	h1 {
+		font-size: 20px;
+		letter-spacing: 2px;
+		margin: 1.66em 0;
+	}
+}
+@media(max-width:414px){
+	.form-date-w3-agileits {
+		width: 100%;
+		float: none;
+	}
+	.form-time-w3layouts {
+		width: 100%;
+		float: none;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		width: 90%;
+	}
+	.form-left-agileits-w3layouts {
+		width: 100%;
+		float: none;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		margin-bottom: 1em;
+	}
+	h1 {
+		font-size: 18px;
+		letter-spacing: 1.5px;
+		margin: 1.7em 0;
+	}
+	.bottom-w3ls {
+		margin-bottom: 1em;
+	}
+	.make input[type=submit] {
+		margin-top: 1.5em;
+	}
+	.book-reservation select.form-control {
+		width: 98%;
+	}
+	.book-reservation {
+		padding: 28px;
+	}
+}
+@media(max-width:384px){
+	h1 {
+		font-size: 17px;
+	}
+	.copy p {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	
+}
+@media(max-width:375px){
+	
+}
+@media(max-width:320px){
+	.book-reservation label {
+		font-size: 11.4px;
+		margin-left: 6px;
+		margin-bottom: 6px;
+	}
+	h1 {
+		line-height: 28px;
+		margin: 1.2em 0 1em;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		font-size: 14px;
+	}
+	.book-reservation {
+		padding: 25px;
+	}
+	.book-reservation input[type="text"], .book-reservation input[type="date"], .book-reservation input[type="time"], .book-reservation input[type="email"] {
+		width: 89%;
+	}
+	.book-reservation select.form-control {
+		width: 100%;
+	}
+	.make input[type=submit] {
+		margin-top: 1em;
+	}
+	.copy.w3ls {
+		margin: 1em 1.5em;
+	}
+}
+/*--//responsive-design--*/

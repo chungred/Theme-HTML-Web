@@ -1,0 +1,220 @@
+/*	----------------------------------------------------------------
+	MaxCycle (Fullscreen Slideshow for use with jQuery Cycle Plugin)
+	----------------------------------------------------------------
+	
+	Demo at: http://www.aaronvanderzwan.com/maxcycle/
+	Download and Info at: http://github.com/akv2/MaxCycle---jQuery-Plugin/
+	Copyright (c) 2007-2011 Aaron Vanderzwan
+	Dual licensed under the MIT and GPL licenses.
+	
+*/
+/*! Version: 2.0.73 (12-Oct-2012) */
+
+
+.mc-hide-scrolls{
+	overflow:hidden;
+}
+
+body .mc-cycle {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	top:0;
+	width: 100%!important;
+	z-index: 999;
+	height: 780px!important;
+}
+
+div.mc-image {
+	/*NOTE: Mozilla flickers when fading and using 'all', so we have to be specific with what property we want to transition:
+	 	If you are using fading transitions, use 'opacity: */
+	-webkit-transition: opacity 1s ease-in-out; 
+	-moz-transition: opacity 1s ease-in-out; 
+	-o-transition: opacity 1s ease-in-out; 
+	transition: opacity 1s ease-in-out;
+	
+	/*If you are using horizontal slide transitions, use the following CSS:
+	-webkit-transition: left 1s ease-in-out; 
+	-moz-transition: left 1s ease-in-out; 
+	-o-transition: left 1s ease-in-out; 
+	transition: left 1s ease-in-out;*/
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+
+.mc-old-browser .mc-image {
+	overflow:hidden;
+	background-image: url(../lib/images/demo/pattern.jpg);
+    background-size: cover;
+	height: 780px!important;
+}
+
+/*-- responsive media queries --*/
+@media (max-width: 1680px){
+	body .mc-cycle {
+		height: 735px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 735px!important;
+	}
+}
+@media (max-width: 1440px){
+	body .mc-cycle {
+		height: 680px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 680px!important;
+	}
+}
+@media (max-width: 1366px){
+	body .mc-cycle {
+		height: 650px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 650px!important;
+	}
+}
+@media (max-width: 1280px){
+	body .mc-cycle {
+		height: 620px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 620px!important;
+	}
+}
+@media (max-width: 1080px){
+	body .mc-cycle {
+		height: 500px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 500px!important;
+	}
+}
+@media (max-width: 1050px){
+	body .mc-cycle {
+		height: 480px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 480px!important;
+	}
+}
+@media (max-width: 1024px){
+	body .mc-cycle {
+		height: 460px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 460px!important;
+	}
+}
+@media (max-width: 991px){
+	body .mc-cycle {
+		height: 450px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 450px!important;
+	}
+}
+@media (max-width: 900px){
+	body .mc-cycle {
+		height: 400px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 400px!important;
+	}
+}
+@media (max-width: 800px){
+	body .mc-cycle {
+		height: 350px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 350px!important;
+	}
+}
+@media (max-width: 768px){
+	body .mc-cycle {
+		height: 330px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 330px!important;
+	}
+}
+@media (max-width: 736px){
+	body .mc-cycle {
+		height: 310px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 310px!important;
+	}
+}
+@media (max-width: 667px){
+	body .mc-cycle {
+		height: 270px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 270px!important;
+	}
+}
+@media (max-width: 640px){
+	body .mc-cycle {
+		height: 250px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 250px!important;
+	}
+}
+@media (max-width: 600px){
+	body .mc-cycle {
+		height: 230px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 230px!important;
+	}
+}
+@media (max-width: 568px){
+	body .mc-cycle {
+		height: 215px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 215px!important;
+	}
+}
+@media (max-width: 480px){
+	body .mc-cycle {
+		height: 205px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 205px!important;
+	}
+}
+@media (max-width: 384px){
+	body .mc-cycle {
+		height: 188px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 188px!important;
+	}
+}
+@media (max-width: 375px){
+	body .mc-cycle {
+		height: 178px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 178px!important;
+	}
+}
+@media (max-width: 320px){
+	body .mc-cycle {
+		height: 150px!important;
+	}
+	.mc-old-browser .mc-image {
+		height: 150px!important;
+	}
+}

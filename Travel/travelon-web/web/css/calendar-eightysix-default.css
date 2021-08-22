@@ -1,0 +1,288 @@
+/* General */
+@font-face {
+	font-family: 'AmbleRegular';
+    src: url( ../fonts/Amble-Light-webfont.ttf ) format("truetype"); 
+}
+.calendar-eightysix {
+	cursor: default;
+	position: absolute;
+	z-index: 999;
+	text-align: center;
+}
+	.calendar-eightysix, .calendar-eightysix * {
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+		.calendar-eightysix .header.dragger {
+			cursor: move;
+		}
+		
+			.calendar-eightysix .header .arrow-left, .calendar-eightysix .header .arrow-right {
+				cursor: pointer;
+			}
+			.calendar-eightysix .header .arrow-left {
+				float: left;
+			}
+			.calendar-eightysix .header .arrow-right {
+				float: right;
+			}
+			
+			.calendar-eightysix .header .label {
+				display: inline-block;
+			}
+				.calendar-eightysix .header .label.clickable {
+					cursor: pointer;
+				}
+		
+		.calendar-eightysix .body {
+			position: relative;
+		}
+			.calendar-eightysix .body .inner .container {
+				position: absolute;
+				left: 0;
+			}
+				
+				.calendar-eightysix .body .inner .container .row div {
+					float: left;
+				}
+				
+					.calendar-eightysix .body .inner .container.month.pickable .row div, 
+					  .calendar-eightysix .body .inner .container.year-decade .row div {
+						cursor: pointer;
+					}
+
+/* Specifc */
+
+.calendar-eightysix.default {
+	width: 216px;
+	height: 170px;
+	background: url('../img/default/background.png') center no-repeat;
+	font-family: Trebuchet, Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	color: #888;
+}
+*html .calendar-eightysix.default { /* IE6 png fix */
+	background-image: url('../img/default/background.gif');
+}
+
+	.calendar-eightysix.default .wrapper {
+		padding: 8px;
+	}
+		
+		/* Header */
+		
+		.calendar-eightysix.default .header {
+			height: 25px;
+			background: #000;
+color: #fff;
+		}
+		
+			.calendar-eightysix.default .header .arrow-left, .calendar-eightysix.default .header .arrow-right {
+				width: 12px;
+				height: 13px;
+				margin: 6px 7px;
+			}
+			.calendar-eightysix.default .header .arrow-left {
+				background: transparent url('../images/arrow-left.png') center no-repeat;
+			}
+				*html .calendar-eightysix.default .header .arrow-left { /* IE6 png fix */
+					background: none;
+					filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/arrow-left.png', sizingMethod='scale'); 
+				}
+				.calendar-eightysix.default .header .arrow-left:hover {
+					background-image: url('../images/arrow-left-hover-blue.png');
+				}
+			.calendar-eightysix.default .header .arrow-right {
+				background: transparent url('../images/arrow-right.png') center no-repeat;
+			}
+				*html .calendar-eightysix.default .header .arrow-right { /* IE6 png fix */
+					background: none;
+					filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/arrow-right.png', sizingMethod='scale'); 
+				}
+				.calendar-eightysix.default .header .arrow-right:hover {
+					background-image: url('../img/default/arrow-right-hover-blue.png');
+				}
+			
+			.calendar-eightysix.default .header .label {
+				margin-top: 6px;
+				
+	font-family: 'AmbleRegular';
+				color: #eee;
+				font-size:1.4em;
+			}
+				.calendar-eightysix.default .header .label.clickable:hover {
+					color: #fff;
+				}
+		
+		/* Body */
+		
+		.calendar-eightysix.default .body {
+			height: 126px;
+		}
+			
+			.calendar-eightysix.default .body .inner .container {
+				width: 200px;
+				height: 126px;
+			}
+			
+			/* General container */
+			
+			.calendar-eightysix.default .body .inner .container .row {
+				width: 200px;
+			}
+				.calendar-eightysix.default .body .inner .container .row.even,
+				  .calendar-eightysix.default .body .inner .container .row.even div {
+					background-color: #eee;
+				}
+				.calendar-eightysix.default .body .inner .container .row.odd div {
+					background-color: #fff;
+				}
+				
+				.calendar-eightysix.default .body .inner .container .row div.today {
+					text-decoration: underline;
+				}
+				.calendar-eightysix.default .body .inner .container .row div.selected {
+					font-weight: bold;
+					color: #028C69 !important;
+				}
+				
+				.calendar-eightysix.default .body .inner .container .row div.non-selectable,
+				  .calendar-eightysix.default .body .inner .container .row div.non-selectable:hover {
+					color: #dcdcdc !important;
+					cursor: default !important;
+				}
+			
+			/* Month */
+			
+			.calendar-eightysix.default .body .inner .container.month .row.a div {
+				cursor: default !important;
+				color: #888 !important;
+			}
+			
+			.calendar-eightysix.default .body .inner .container.month .row {
+				font-family: 'AmbleRegular';
+				height: 18px;
+			}
+				
+				.calendar-eightysix.default .body .inner .container.month .row div {
+margin-top: 0px;
+width: 24px;
+padding: 4px 0;
+				}
+				
+				.calendar-eightysix.default .body .inner .container.month .row div.first {
+					padding-left: 16px;
+				}
+				.calendar-eightysix.default .body .inner .container.month .row div.last {
+					padding-right: 16px;
+				}
+				
+				.calendar-eightysix.default .body .inner .container.month .row div.outside {
+					color: #555;
+				}
+				.calendar-eightysix.default .body .inner .container.month .row.even div.outside {
+					color: #000;
+				}				
+					.calendar-eightysix.default .body .inner .container.month .row.a div {
+						color: #555;
+					}
+		
+			/* Year & decade */
+			
+			.calendar-eightysix.default .body .inner .container.year-decade .row {
+				height: 42px;
+			}
+				.calendar-eightysix.default .body .inner .container.year-decade .row div {
+					width: 42px;
+					padding-top: 13px;
+					height: 29px;
+				}
+					.calendar-eightysix.default .body .inner .container.year-decade .row div.first {
+						margin-left: 16px;
+					}
+					.calendar-eightysix.default .body .inner .container.year-decade .row div.last {
+						margin-right: 16px;
+					}
+					
+					*html .calendar-eightysix.default .body .inner .container.year-decade .row div.first { /* IE6 fix */
+						margin-left: 9px;
+					}
+					*html .calendar-eightysix.default .body .inner .container.year-decade .row div.last { /* IE6 fix */
+						margin-right: 9px;
+					}
+					
+					.calendar-eightysix.default .body .inner .container.month.pickable .row div:hover, 
+					  .calendar-eightysix.default .body .inner .container.year-decade .row div:hover {
+						color: #b2cfe1;
+					}
+		
+		/* Footer */
+		
+		.calendar-eightysix.default .footer {
+			background: transparent url('../img/default/footer-blue.png') top no-repeat;
+			height: 4px;
+		}
+				*html .calendar-eightysix.default .footer { /* IE6 png fix */
+					background: none;
+					filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/default/footer-blue.png', sizingMethod='scale'); 
+				}
+
+
+/* Red style */
+
+.calendar-eightysix.default.red .header .arrow-left:hover {
+	background-image: url('../img/default/arrow-left-hover-red.png');
+}
+.calendar-eightysix.default.red .header .arrow-right:hover {
+	background-image: url('../img/default/arrow-right-hover-red.png');
+}
+.calendar-eightysix.default.red .header .label {
+	color: #d13a3a;
+}
+	.calendar-eightysix.default.red .header .label.clickable:hover {
+		color: #d06d6d;
+	}
+.calendar-eightysix.default.red .footer {
+	background-image: url('../img/default/footer-red.png');
+}
+	*html .calendar-eightysix.default.red .footer { /* IE6 png fix */
+		background: none;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/default/footer-red.png', sizingMethod='scale'); 
+	}
+.calendar-eightysix.default.red .body .inner .container.month.pickable .row div:hover, 
+  .calendar-eightysix.default.red .body .inner .container.year-decade .row div:hover {
+	color: #b90000;
+}
+.calendar-eightysix.default.red .body .inner .container .row div.selected {
+	color: #b90000 !important;
+}
+
+/* Green style */
+
+.calendar-eightysix.default.green .header .arrow-left:hover {
+	background-image: url('../img/default/arrow-left-hover-green.png');
+}
+.calendar-eightysix.default.green .header .arrow-right:hover {
+	background-image: url('../img/default/arrow-right-hover-green.png');
+}
+.calendar-eightysix.default.green .header .label {
+	color: #73a642;
+}
+	.calendar-eightysix.default.green .header .label.clickable:hover {
+		color: #73a642;
+	}
+.calendar-eightysix.default.green .footer {
+	background-image: url('../img/default/footer-green.png');
+}
+	*html .calendar-eightysix.default.green .footer { /* IE6 png fix */
+		background: none;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/default/footer-green.png', sizingMethod='scale'); 
+	}
+.calendar-eightysix.default.green .body .inner .container.month.pickable .row div:hover, 
+  .calendar-eightysix.default.green .body .inner .container.year-decade .row div:hover {
+	color: #73a642;
+}
+.calendar-eightysix.default.green .body .inner .container .row div.selected {
+	color: #9abd79 !important;
+}

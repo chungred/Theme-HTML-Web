@@ -1,0 +1,199 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaunt  A Travel Category Flat Bootstrap Responsive  Website Template | Contact :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jaunt Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Hind:400,300,500,600,700' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+<script>
+$(function() {
+
+	// grab the initial top offset of the navigation 
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+	
+	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('#sticky_navigation').css({ 'position': 'relative' }); 
+		}   
+	};
+	
+	// run our function on load
+	sticky_navigation();
+	
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+	
+	// NOT required:
+	// for this demo disable all links that point to "#"
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); 
+	});
+	
+});
+</script>
+</head>
+<body>
+<!--header strip start here-->
+<div id="sticky_navigation_wrapper">
+	<div id="sticky_navigation">
+<div class="h-strip">
+	<div class="container">
+		<div class="h-strip-main">
+			<div class="h-strip-logo">
+				<div class="h-strip-left">
+					<h1><a href="index.html">Jaunt</a></h1>
+				</div>
+				<div class="h-strip-right">
+				  <form>
+					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+					<input type="submit" value="">
+				  </form>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+			<!-- top-nav -->
+			<span class="menu"> </span>
+			<div class="cleary"> </div>
+		<div class="top-strip">
+			<nav class="cl-effect-4">
+				<ul class="top-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="packages.html">Packages</a></li>
+					<li><a href="shortcords.html" >Shortcodes</a></li>
+					<li><a class="active" href="contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script>
+					$( "span.menu" ).click(function() {
+					  $( ".top-strip" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+		<!-- top-nav -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<section id="main">
+<!--header strip end here-->
+<!--CONTACT START HERE-->
+<div class="contact">
+	<div class="container">
+		<div class="contact-main">
+			 <div class="contact-top">
+			 	<h3>Contact Us</h3>
+			 	<P>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using making it look like readable English.</P>
+			 </div>
+			<div class="col-md-6 contact-left">
+			  <div class="contact-info">
+				<h3>Contact Information</h3>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
+			   </div>
+			  <div class= "con-addr">
+			    <h4>Address</h4>
+			    <p><b>The Company Name</b></p>
+				<p>Contrary to popular </p>
+			    <p>ph : +0000 000 000</p>
+			  </div>
+			</div>
+			<div class="col-md-6 contact-right">
+			<form>
+				<div class="text">
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="text">
+					<input type="text" placeholder="Email">
+				</div>
+				<div class="text">
+					<input type="text" placeholder="Subject">
+				</div>
+				<div class="text">
+				<textarea placeholder="Message" required=""></textarea>
+				</div>
+					<input type="submit" value="Send">
+		   </form>
+			</div>
+		 <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--CONTACT END HERE-->
+<!--map start here-->
+<div class="map">
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583421!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1415253431785"  frameborder="0" style="border:0"></iframe>
+</div>
+<!--map end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-6 footer-left">
+			<h2><a href="index.html">Jaunt</a></h2>
+			</div>
+			<div class="col-md-6 footer-right">
+				<p class="footer-class"> © 2016 Jaunt. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript">
+										$(document).ready(function() {
+											/*
+											var defaults = {
+									  			containerID: 'toTop', // fading element id
+												containerHoverID: 'toTopHover', // fading element hover id
+												scrollSpeed: 1200,
+												easingType: 'linear' 
+									 		};
+											*/
+											
+											$().UItoTop({ easingType: 'easeOutQuart' });
+											
+										});
+									</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+</div>
+</section>
+<!--footer end here--> 
+</body>
+</html>

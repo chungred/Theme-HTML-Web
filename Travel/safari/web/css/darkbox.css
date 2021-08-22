@@ -1,0 +1,81 @@
+/*
+Darkbox
+*/
+[data-darkbox]{ /* add cursor to clickable darkbox items */
+    cursor:pointer;
+    backface-visibility:hidden;
+}
+#darkbox{
+    position:fixed;
+    z-index:9999;
+    background:rgba(0,0,0,0.8) no-repeat none 50%;
+    background-size: contain;
+    box-shadow:0 0 0 3000px rgba(0,0,0,0.8);
+    opacity:0; 
+    visibility:hidden;
+}
+#darkbox.on{ 
+    opacity:1;
+    visibility:visible;
+    height:90% !important;
+    width:90% !important;
+    left:5% !important;
+    top:5% !important;
+}
+#darkbox:after{
+    position:absolute;
+    right:0; top:0;
+    font-size:2em;
+    content:"\2A2F";
+    color:#fff;
+    cursor:pointer;
+}
+/*prev next buttons*/
+#darkbox_prev,
+#darkbox_next{
+    cursor:pointer;
+    user-select:none;
+    -webkit-user-select:none;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    height:50px;
+    width:50px;
+    -webkit-transition:0.3s;
+    transition: 0.3s;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+#darkbox_prev:hover,
+#darkbox_next:hover{
+    border-color: #09c;
+}
+#darkbox_prev{
+    left: -2px;
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+#darkbox_next{
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: -2px;
+}
+#darkbox-description{
+    position: absolute;
+    width:100%;
+    color:#fff;
+    bottom:5px;
+    text-align:right;
+    text-shadow: 0 1px 1px #000;
+}
+#darkbox-description a{
+    color:#fff;
+    font-weight:bold;
+}
+#darkbox sub{font-size:10px;}

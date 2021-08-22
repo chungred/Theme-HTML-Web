@@ -1,0 +1,294 @@
+
+.thumb-grid img {
+  opacity: 0;
+}
+
+.thumb-grid.active img {
+  opacity: 1;
+}
+
+.thumb-grid {
+  position: absolute;
+  margin: 20px auto;
+  padding: 0;
+  width: 72%;
+  list-style: none;
+  font-size: 0;
+}
+
+.thumb-grid li {
+  position: relative;
+    display: inline-block !important;
+    margin: 1%;
+    width: 31.333%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+}
+
+.thumb-grid li img {
+  transition:All 1s ease;
+  -webkit-transition:All .3s ease;
+  -moz-transition:All .3s ease;
+  -o-transition:All .3s ease;
+
+  transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+  -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+  -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+  -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+  -ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+	    width: 100%;
+}
+
+.thumb-grid li:hover img {
+  transform: rotate(0deg) scale(1.3) skew(0deg) translate(0px);
+  -webkit-transform: rotate(0deg) scale(1.3) skew(0deg) translate(0px);
+  -moz-transform: rotate(0deg) scale(1.3) skew(0deg) translate(0px);
+  -o-transform: rotate(0deg) scale(1.3) skew(0deg) translate(0px);
+  -ms-transform: rotate(0deg) scale(1.3) skew(0deg) translate(0px);
+
+}
+
+.thumbWrapper {
+  cursor: pointer;
+}
+
+/* Navigation */
+
+#customize {
+  display: inline-block;
+  margin-top: -30px;
+  position: absolute;
+  color: white
+}
+
+
+#customize input, #customize select {
+  font-size: 17px;
+  margin: 3px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+
+#customize select {
+  margin: 0;
+  background-image: url(thumbgrid-font/font/downArrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 25px;
+  outline: none;
+  overflow: hidden;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+
+}
+
+#customize label {
+  font-size: 16px;
+  margin: 3px 0;
+  padding: 3px 0;
+  width: 150px;
+  display: inline-block;
+}
+
+nav.thumbGridNav {
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+nav.thumbGridNav .indexEl {
+  cursor: pointer;
+}
+
+nav.thumbGridNav .indexEl.sel {
+  color: red;
+}
+
+nav.thumbGridNav a {
+  display: inline-block;
+  margin: 0 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+nav.thumbGridNav a:hover {
+  opacity: 1;
+}
+
+nav.thumbGridNav a.sel {
+  opacity: 1;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+.tg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.90);
+  z-index: 10000;
+
+}
+
+.tg-placeHolder {
+  background: rgb(38, 41, 43);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.tg-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tg-close:after {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    content: "\f00d";
+    font-family: FontAwesome;
+}
+
+.tg-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tg-next:after {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    content: "\f061";
+    font-family: FontAwesome;
+}
+
+.tg-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tg-prev:after {
+	color: #ffffff;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    content: "\f060";
+    font-family: FontAwesome;
+}
+
+.tg-spinner{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  background: transparent;
+  width: 80px;
+  height: 80px;
+}
+
+.ss-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 90%;
+  margin-left: 5%;
+
+}
+
+/*-- responsive media queries --*/
+@media (max-width: 1440px){
+	.thumb-grid {
+		width: 78%;
+	}
+}
+@media (max-width: 1280px){
+	.thumb-grid {
+		width: 85%;
+	}
+}
+@media (max-width: 1080px){
+	.thumb-grid {
+		width: 88%;
+	}
+}
+@media (max-width: 800px){
+	.tg-close {
+		right: -13px;
+	}
+	.tg-next {
+		right: 0px;
+	}
+}
+@media (max-width: 768px){
+	.thumb-grid {
+		width: 92%;
+	}
+}
+@media (max-width: 568px){
+	nav.thumbGridNav a {
+		width: 12px;
+		height: 12px;
+	}
+	nav.thumbGridNav {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 480px){
+	.thumb-grid li {
+		width: 48%;
+	}
+	.thumb-grid {
+		width: 95%;
+	}
+	nav.thumbGridNav {
+		margin-top: 60px;
+	}
+}
+@media (max-width: 414px){
+	nav.thumbGridNav {
+		margin-top: 35px;
+	}
+}
+

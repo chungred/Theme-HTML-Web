@@ -1,0 +1,128 @@
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);@import url(http://fonts.googleapis.com/css?family=Merienda+One);@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+ 
+/*** MENU ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+nav {
+	float:right;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu li {
+	float:			left;
+	margin-right:1px;
+	position:		relative;
+	background: url('../images/nav_li1.jpg') no-repeat;
+}
+.sf-menu a {
+	display:		block;
+	color:#fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform:uppercase;
+	font-size:18px;
+	line-height:24px;
+	padding:25px 30px;
+	background:none;
+	transition: all 0.4s ease 0s;
+	font-weight:bold;
+	text-decoration: none;
+}
+.sf-menu a:hover,
+.sf-menu li.current> a,
+.sf-menu li.sfHover > a {
+	color:#ff4800;
+	text-decoration:none;
+	background: rgb(54,54,54);
+	background: -moz-linear-gradient(top,  rgba(54,54,54,1) 0%, rgba(54,54,54,1) 18%, rgba(46,46,46,1) 93%, rgba(45,45,45,1) 97%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(54,54,54,1)), color-stop(18%,rgba(54,54,54,1)), color-stop(93%,rgba(46,46,46,1)), color-stop(97%,rgba(45,45,45,1)), color-stop(99%,rgba(36,36,36,1)), color-stop(100%,rgba(36,36,36,1)));
+	background: -webkit-linear-gradient(top,  rgba(54,54,54,1) 0%,rgba(54,54,54,1) 18%,rgba(46,46,46,1) 93%,rgba(45,45,45,1) 97%,rgba(36,36,36,1) 99%,rgba(36,36,36,1) 100%);
+	background: -o-linear-gradient(top,  rgba(54,54,54,1) 0%,rgba(54,54,54,1) 18%,rgba(46,46,46,1) 93%,rgba(45,45,45,1) 97%,rgba(36,36,36,1) 99%,rgba(36,36,36,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(54,54,54,1) 0%,rgba(54,54,54,1) 18%,rgba(46,46,46,1) 93%,rgba(45,45,45,1) 97%,rgba(36,36,36,1) 99%,rgba(36,36,36,1) 100%);
+	background: linear-gradient(to bottom,  rgba(54,54,54,1) 0%,rgba(54,54,54,1) 18%,rgba(46,46,46,1) 93%,rgba(45,45,45,1) 97%,rgba(36,36,36,1) 99%,rgba(36,36,36,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#242424',GradientType=0 );
+}
+.sf-menu ul a:hover,
+.sf-menu ul li.sfHover > a {
+	background:none;
+	color:#fff;
+	text-decoration:none;
+}
+
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	background:#7a7a7a;
+	padding:15px 0 0px 18px; 
+	width:			98px; /* left offset of submenus need to match (see below) */
+}
+
+.sf-menu ul ul {
+	background:#404040;
+}
+
+.sf-menu ul li {
+    background: url("../images/divider1.png") repeat-x scroll center bottom transparent;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 75%;
+}
+
+.sf-menu ul ul li {
+	text-align:left;
+}
+
+.sf-menu ul a {
+	color:#c9c9c9;
+	display:inline-block;
+	font-size:14px;
+	background:none;
+	padding:0;
+	line-height:17px;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			74px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: 98px;
+    top: -2px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left: 68px;
+    top: -13px;
+}
+.sf-menu li.sub-menu:after {
+    background: url("../images/indicator.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 10%;
+    margin-top: -1px;
+    position: absolute;
+    top: 48%;
+    width: 5px;
+}
+.sf-menu ul li.sub-menu:after {right: 0;}
+
+

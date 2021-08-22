@@ -1,0 +1,263 @@
+/*===
+16) Site styles
+===*/
+.projectThumbnail {
+    cursor: pointer;
+}
+.projectNav button {
+	background: none;
+	border: none;
+	text-shadow: none;
+	padding: 0;
+}
+ .projectNav button:hover {
+	background: none;
+	border: none;
+}
+#overview {
+	padding-bottom: 10px;	
+}
+#overview h3 {
+	font-family: Georgia, Arial, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: -0.04em;
+	text-rendering: auto;
+	color: #333;
+	margin-top: -7px;
+	margin-bottom: 22px;	
+}
+.project {
+	margin-bottom: 30px;
+	position: relative;
+}
+.projectThumbnail {
+	max-width: 100%;
+	height: 100%;
+}
+.projectThumbnail img {
+	display: block;
+}
+.projectThumbnailHover {
+	background-color: rgba(60, 175, 230, 0.72);
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+}
+.projectThumbnailHover h4 {
+	font-size:2em;
+	color: #fff;
+	position: absolute;
+	margin-top: 73px;
+	display: none;
+}
+.projectThumbnailHover h5 {
+	font-size: 1em;
+	color: #fff;
+	position: absolute;
+	padding-top: 103px;
+	display: none;
+}
+.projectInfo {
+	overflow: hidden;
+}
+.projectInfo h4 {
+	color: #fff;
+    font-size: 1.3em;
+	margin: 0.3em 0 0;
+}
+.projectNavClose{
+	float:right;
+}
+/* Tweak positioning slightly in Firefox */
+.projectInfo{
+	background-color:#3cafe6;
+    padding:1em 2em;
+}
+.projectInfo p {
+    color: #fff;
+    font-size: 0.95em;
+    line-height: 1.8em;
+    padding: 0.5em 0 0;
+}
+.linedList {
+	padding-bottom: 7px;
+}
+
+.contentModule {
+	margin-bottom: 22px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid;
+}
+.contentModule p {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	line-height: 1.4;
+}
+.contentModule li:first-child, .contentModule p:first-child {
+	margin-top: -3px;
+}
+.contentModule:last-child {
+	border-bottom: none;
+}
+.thumbnailMask {
+	/*background-image: url("../images/masks/rounded.png");*/
+	/*
+	Disable pointer events to allow swipe navigation - needed to use a svg instead of a div since no versions of IE support pointer events on divs
+	*/
+	pointer-events: none;
+	width: 460px;
+	height: 284px;
+	position: absolute;
+	z-index: 24;
+}
+button.closeButton {
+    outline: none;
+    border: none;
+    background: none;
+}
+/*--gallery1--*/
+.projcet-ro{
+width: 92.3%;
+}
+.projcet-ro h4{
+margin-top: 105px;
+}
+.projcet-ro h5{
+padding-top: 140px;
+}
+/*--gallery2--*/
+.projcet-ro1{
+width: 94.8%;
+}
+.projcet-ro1 h4{
+margin-top: 180px;
+}
+.projcet-ro1 h5{
+padding-top: 210px;
+}
+/*==
+Media queries
+===*/
+@media(max-width:1366px){
+.projectThumbnailHover {
+    width: 89.5%;
+}
+/*--GALLERY-1--*/
+.projcet-ro {
+    width: 92.3%;
+}
+/**---gallery-2--*/
+.projcet-ro1 {
+    width: 94.8%;
+}
+}
+@media(max-width:1024px){
+.projectThumbnailHover {
+    width: 88%;
+}
+.projectThumbnailHover h4 {
+    margin-top: 57px;
+}
+.projectThumbnailHover h5 {
+    padding-top: 92px;
+}
+/*--GALLERY-1--*/
+.projcet-ro {
+    width: 90.3%;
+}
+.projcet-ro h5 {
+    padding-top: 122px;
+}
+.projcet-ro h4 {
+    margin-top: 80px;
+}
+/**---gallery-2--*/
+.projcet-ro1 {
+    width: 93.8%;
+}
+.projcet-ro1 h5 {
+    padding-top: 175px;
+}
+.projcet-ro1 h4 {
+    margin-top: 133px;
+}
+}
+@media(max-width:991px){
+.projectThumbnailHover {
+    width: 87.9%;
+}
+.projectThumbnailHover h4 {
+    margin-top:45px;
+}
+.projectThumbnailHover h5 {
+    font-size: 0.9em;
+    padding-top:85px;
+}
+.project {
+    margin-bottom: 30px;
+    float: left;
+    width: 33.3%;
+}
+.projectInfo {
+    padding: 1em 1em;
+}
+.projectInfo p {
+    font-size: 0.9em;
+}
+}
+@media(max-width:640px){
+.projectThumbnailHover h4 {
+    margin-top: 25px;
+}
+.projectThumbnailHover {
+    width: 84.9%;
+}
+.projectThumbnailHover h5 {
+    padding-top:70px;
+}
+.projectInfo h4 {
+    font-size: 1em;
+}
+}
+@media(max-width:480px){
+.projectThumbnailHover h4 {
+    margin-top: 43px;
+}
+.projectThumbnailHover h5 {
+    font-size: 0.9em;
+    padding-top: 78px;
+}
+.projectThumbnailHover {
+    width: 92.6%;
+}
+.project {
+    margin-bottom: 30px;
+    float: none;
+    width: 100%;
+}
+}
+@media(max-width:320px){
+.project {
+    margin-bottom: 10px;
+    padding: 0 0px;
+}
+.projectThumbnailHover {
+    width:100%;
+}
+.projectThumbnailHover h4 {
+    font-size: 1.4em;
+    margin-top: 29px;
+}
+
+.projectThumbnailHover h5 {
+    font-size: 0.8em;
+    padding-top: 54px;
+}
+}
+	
+		

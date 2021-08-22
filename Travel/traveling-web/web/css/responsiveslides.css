@@ -1,0 +1,123 @@
+/*! http://responsiveslides.com v1.53 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+ 	display: block;
+	height: auto;
+	float: left;
+	border: 0;
+	width: 100%;
+  }
+.slider-info {
+	position: absolute;
+	top: 173px;
+	left: 18%;
+	text-align: center;
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+    border-radius: 0.3em;
+}
+.slider-info p{
+	font-family: 'Roboto', sans-serif;
+	color: #012231;
+	font-size:3em;
+	text-transform:uppercase;
+}
+.slider-info span{
+	font-family: 'Roboto', sans-serif;
+	width: 58%;
+	color: #012231;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	display: block;
+	left: 20%;
+	position: absolute;
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+.slider-info a{
+	font-family: 'Roboto', sans-serif;
+	background: #012231;
+	color: #d6d6d6;
+	padding: 15px 40px;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	display: block;
+	left: 43%;
+	position: absolute;
+	top: 182%;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+.slider-info a:hover{
+	background:#289cd8;
+	color:#FFF;
+}
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+	.slider-info {
+		left: 15%;
+	}
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+	.slider-info {
+		left: 11%;
+		top: 137px;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.slider-info {
+		top: 82px;
+		left: 2%;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.slider-info {
+		top: 48px;
+		left: 6%;
+	}
+	.slider-info p {
+		font-size: 2em;
+	}
+	.slider-info span {
+		width:70%;
+		margin:0 auto;
+	}
+	.slider-info a {
+		top: 254%
+	}
+
+}

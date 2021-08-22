@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot?-e43dk9');
+	src:url('../fonts/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
+		url('../fonts/fontawesome.woff?-e43dk9') format('woff'),
+		url('../fonts/fontawesome.ttf?-e43dk9') format('truetype'),
+		url('../fonts/fontawesome.svg?-e43dk9#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} 
+section.service h2.text-center,section.team h3.text-center,section.work h3.text-center,section.test h3.text-center {
+	position:relative;
+}
+section.service h2.text-center:before ,section.team h3.text-center:before,section.work h3.text-center:before,section.test h3.text-center:before {
+	content:'';
+	background-color:#000;
+	height:2px;
+	width: 22%;
+    left: 39%;
+	bottom:15px;
+	display:block;
+	position:absolute;
+}
+section.service h2.text-center:before {
+	width: 22%;
+    left: 39%;
+	bottom:15px;
+}
+section.service h2.text-center:after,section.team h3.text-center:after,section.work h3.text-center:after,section.test h3.text-center:after {
+    font-family: 'fontawesome';
+    speak: none;
+    position: absolute;
+    background-color: #fff;
+    width: 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    z-index: 99;
+	bottom:10%;
+	left:48%;
+}
+section.service h2.text-center:after {
+	bottom:10%;
+	left:48%;
+	content: '\f1b3 ';
+}
+section.team h3.text-center:before {
+	width: 22%;
+    left: 39%;
+	bottom:15px;
+}
+section.team h3.text-center:after { 
+	content:'\f083';
+	bottom:10%;
+	left:48%;
+}
+section.work h3.text-center:before {
+	width: 22%;
+    left: 39%;
+	bottom:15px;
+}
+section.work h3.text-center:after { 
+	content:'\f013';
+	bottom:10%;
+	left:48%;
+}
+section.test h3.text-center:before {
+	width: 22%;
+    left: 39%;
+	bottom:15px;
+}
+section.test h3.text-center:after { 
+	content:'\f0e6';
+	bottom:10%;
+	left:48%;
+}

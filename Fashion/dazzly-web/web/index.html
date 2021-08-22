@@ -1,0 +1,542 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dazzly a Fashion Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dazzly Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- menu -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu -->
+<!-- gallery -->
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+<!--light-box-files -->
+<script type="text/javascript" charset="utf-8">
+$(function() {
+	$('.gallery a').Chocolat();
+});
+</script>
+<!-- //gallery -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href='//fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+</head>
+	
+<body class="cbp-spmenu-push">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+</script>
+<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">Dazzly</a>
+				</div>
+				<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#about" class="scroll">About Us</a></li>
+							<li><a href="#services" class="scroll">Services</a></li>
+							<li><a href="#events" class="scroll">News & Events</a></li>
+							<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+							<li><a href="#mail" class="scroll">Mail Us</a></li>
+						</ul>
+					</nav>
+					<div class="main buttonset">	
+							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+							<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+							<!--<span class="menu"></span>-->
+					</div>
+					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+					<script src="js/classie.js"></script>
+					<script>
+					var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+					showRightPush.onclick = function() {
+						classie.toggle( this, 'active' );
+						classie.toggle( body, 'cbp-spmenu-push-toleft' );
+						classie.toggle( menuRight, 'cbp-spmenu-open' );
+						disableOther( 'showRightPush' );
+					};
+
+					function disableOther( button ) {
+						if( button !== 'showRightPush' ) {
+							classie.toggle( showRightPush, 'disabled' );
+						}
+					}
+					</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="banner-info">
+				<h1>Neque quisquam <span>quidolorem</span></h1>
+				<p>pursues or desires</p>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- about -->
+	<div id="about" class="about">
+		<div class="container">
+			<h3>About <span>Me</span></h3>
+			<div class="about-info">
+				<div class="sliderfig">
+					<ul id="flexiselDemo1">			
+						<li>
+							<div class="about-info-left">
+								<p><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Quaerat</p>
+							</div>
+						</li>
+						<li>
+							<div class="about-info-left">
+								<p><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Voluptas</p>
+							</div>
+						</li>
+						<li>
+							<div class="about-info-left">
+								<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Molestiae</p>
+							</div>
+						</li>
+						<li>
+							<div class="about-info-left">
+								<p><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Aliquam </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+					<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 4,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 2
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems:3
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+								
+							});
+					</script>
+					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			</div>
+			<div class="about-grid">
+				<div class="col-md-6 about-grid-left">
+					<img src="images/1.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 about-grid-right">
+					<h2>vel illum qui dolorem nostrud exercitation ullamco laboris</h2>
+					<h4>aliquidcommodi consequatur</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+						aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- get-in -->
+	<div class="get-in-grids">
+		<div class="container">
+			<div class="get-in-grid-left">
+				<p>Get In Touch With Us</p>
+			</div>
+			<div class="get-in-grid-right">
+				<form>
+					<input type="text" value="Enter Your Mail..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Mail...';}" required="">
+					<input type="submit" value="Send" >
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- services -->
+	<div id="services" class="services">
+		<div class="container">
+			<h3><span>Our</span> Services</h3>
+			<div class="row work-row">
+				<div class="service-grid">
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>Lorem ipsum</h4>
+							<p>Vero eos et accusamus et iusto odio dignissimos ducimus</p>						
+						 </div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>Lorem ipsum</h4>
+							<p>Vero eos et accusamus et iusto odio dignissimos ducimus</p>						
+						 </div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>Lorem ipsum</h4>
+							<p>Vero eos et accusamus et iusto odio dignissimos ducimus</p>						
+						 </div>
+					</div>
+				</div>
+				<div class="service-grid">
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>ipsumorem</h4>
+							<p>odioero eos et accusamus et iusto dignissimos ducimus</p>						
+						 </div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-oil" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>ipsumorem</h4>
+							<p>odioero eos et accusamus et iusto dignissimos ducimus</p>						
+						 </div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class="work-grids-img">
+							<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+						</div>	
+						<div class="caption work-captn">
+							<h4>ipsumorem</h4>
+							<p>odioero eos et accusamus et iusto dignissimos ducimus</p>						
+						 </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+			<div class="blog-info">
+				<div class="col-md-4 blog-info-left">
+					<div class="blog-info-left1">
+						<h4>fugiat quo voluptas</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+							quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+							voluptas nulla pariatur</p>
+					</div>
+				</div>
+				<div class="col-md-4 blog-info-left">
+					<div class="blog-info-left1">
+						<a href="mailto:info@example.com">info@example.com</a>
+						<p><span>+3728 098 808</span>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae.</p>
+					</div>
+				</div>
+				<div class="col-md-4 blog-info-left">
+					<div class="blog-info-left1">
+						<h4>Testimonials</h4>
+						<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+							quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+							voluptas nulla pariatur</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- events -->
+	<div id="events" class="events">
+		<div class="container">
+			<h3>News & <span>Events</span></h3>
+			<div class="events-grids">
+				<div class="col-md-4 events-grid">
+					<div class="cal">
+						<img src="images/1.png" alt=" " class="img-responsive" />
+						<div class="cal-info">
+							<h4>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 events-grid">
+					<div class="cal">
+						<img src="images/1.png" alt=" " class="img-responsive" />
+						<div class="cal-info">
+							<h4>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 events-grid">
+					<div class="cal">
+						<img src="images/1.png" alt=" " class="img-responsive" />
+						<div class="cal-info">
+							<h4>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="events-grids1">
+				<div class="col-md-4 events-grid1">
+					<div class="events-grid11">
+						<span>01.</span>
+						<div class="events-grid11-info">
+							<h4><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><label>28 August 2015</label>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 events-grid1">
+					<div class="events-grid11">
+						<span>02.</span>
+						<div class="events-grid11-info">
+							<h4><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><label>28 August 2015</label>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 events-grid1">
+					<div class="events-grid11">
+						<span>03.</span>
+						<div class="events-grid11-info">
+							<h4><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i><label>28 August 2015</label>molestiae consequatur</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+								quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+								voluptas nulla pariatur</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //events -->
+<!-- portfolio -->
+	<div id="portfolio" class="gallery">
+	<div class="container">
+		<h3>Portfolio</h3>
+		<div class="gallery-grids">
+			<div class="col-md-6 baner-top">
+				<figure class="effect-bubba">
+					<a href="images/2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/2.jpg" alt="" class="img-responsive" />
+						<figcaption>
+							<h4>Enimet pulvinar posuere</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>	
+						</figcaption>	
+					</a>
+				</figure>	
+			</div>
+			<div class="col-md-6 baner-top">
+				<figure class="effect-bubba">
+					<a href="images/3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/3.jpg" alt="" class="img-responsive" />
+						<figcaption>
+							<h4>Enimet pulvinar posuere</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>	
+						</figcaption>	
+					</a>
+				</figure>	
+			</div>
+			<div class="clearfix"> </div>
+			<div class="baner-row">
+				<div class="col-md-4 baner-bottom">
+					<figure class="effect-bubba">
+						<a href="images/6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/6.jpg" alt="" class="img-responsive" />
+							<figcaption>
+								<h4 class="sec">Enimet pulvinar</h4>
+								<p>In sit amet sapien eros Integer dolore magna</p>	
+							</figcaption>
+						</a>
+					</figure>	
+				</div>
+				<div class="col-md-4 baner-bottom">
+					<figure class="effect-bubba">
+						<a href="images/7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/7.jpg" alt=""/ class="img-responsive" >
+							<figcaption>
+								<h4 class="sec">Enimet pulvinar</h4>
+								<p>In sit amet sapien eros Integer dolore magna</p>	
+							</figcaption>	
+						</a>
+					</figure>	
+				</div>
+				<div class="col-md-4 baner-bottom">
+					<figure class="effect-bubba">
+						<a href="images/8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/8.jpg" alt=""/ class="img-responsive" >
+							<figcaption>
+								<h4 class="sec">Enimet pulvinar</h4>
+								<p>In sit amet sapien eros Integer dolore magna</p>	
+							</figcaption>	
+						</a>
+					</figure>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>		
+			<div class="col-md-6 baner-top">
+				<figure class="effect-bubba">
+					<a href="images/5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/5.jpg" alt="" class="img-responsive" />
+						<figcaption>
+							<h4>Enimet pulvinar posuere</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>	
+						</figcaption>	
+					</a>
+				</figure>	
+			</div>
+			<div class="col-md-6 baner-top">
+				<figure class="effect-bubba">
+					<a href="images/4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+						<img src="images/4.jpg" alt="" class="img-responsive" />
+						<figcaption>
+							<h4>Enimet pulvinar posuere</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>	
+						</figcaption>	
+					</a>
+				</figure>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //portfolio -->
+<!-- map -->
+	<div id="mail" class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.958900464012!2d36.23097800000001!3d49.993379999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f009ab9f07%3A0xa21e10f67fa29ce!2sGeorgia+Education+Center!5e0!3m2!1sen!2sin!4v1436943860334" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="map-color">
+		</div>
+	<div class="container">
+		<div class="map-grids">
+			<div class="col-md-3 contact-left">
+				<h3>Address</h3>
+				<p>est eligendi optio cumque nihil impedit quo minus id quod maxime
+					<span>26 56D Rescue,US</span></p>
+				<ul>
+					<li>Free Phone :+1 078 4589 2456</li>
+					<li>Telephone :+1 078 4589 2456</li>
+					<li>Fax :+1 078 4589 2456</li>
+					<li><a href="mailto:info@example.com">info@example.com</a></li>
+				</ul>
+			</div>
+			<div class="col-md-9 contact-left">
+				<h3>Contact Form</h3>
+				<div class="line minus1"> 
+				</div>
+				<form>
+					<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+					<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<input type="submit" value="Submit" >
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="icons">	
+				<ul>
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="images/i1.png" alt=""/></a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><img src="images/i2.png" alt=""/> </a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Google+"><img src="images/i3.png" alt=""/></a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="images/i4.png" alt=""/> </a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><img src="images/i5.png" alt=""/> </a></li>
+				</ul>
+				<script>$(function () {
+				  $('[data-toggle="tooltip"]').tooltip()
+				})</script>
+			</div>
+			<p>© 2015 Dazzly . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>					
+		</div>
+		<!-- //footer -->
+		</div>
+	</div>
+<!-- //map -->
+ <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

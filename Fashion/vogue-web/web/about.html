@@ -1,0 +1,315 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vogue a Fashion Category Flat Bootstarp responsive Website Template | About :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Vogue Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--banner-starts-->
+	<div class="bnr" id="home">
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider4">
+			    <li>
+					<div class="banner">
+						<div class="container">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.png" alt="" /></a>
+							</div>
+							<div class="banner-top">
+								<p>Phasellus bibendum malesuada vulputate.</p>
+							</div>
+							<div class="banner-text">
+								<h1>Nulla elementum quam lacinia</h1>
+								<h2>Proin enim nisi</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-1">
+						<div class="container">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.png" alt="" /></a>
+							</div>
+							<div class="banner-top">
+								<p>Vestibulum vel sem sit amet sapien ornare.</p>
+							</div>
+							<div class="banner-text">
+								<h1>Nulla elementum quam lacinia</h1>
+								<h2>Proin enim nisi</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-2">
+						<div class="container">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.png" alt="" /></a>
+							</div>
+							<div class="banner-top">
+								<p>Ut eu sem eget ligula porttitor tempor.</p>
+							</div>
+							<div class="banner-text">
+								<h1>Nulla elementum quam lacinia</h1>
+								<h2>Proin enim nisi</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--banner-ends--> 
+	<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--header-starts-->
+	<div class="header-bottom">
+	 <div class="fixed-header">
+		<div class="container">
+			<div class="top-menu">
+					<span class="menu"><img src="images/nav-icon.png" alt="" /></span>
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a class="active" href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>	
+					<!-- script for menu -->
+						<script>
+						$( "span.menu" ).click(function() {
+						  $( "ul.nav" ).slideToggle( "slow", function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+					<!-- script for menu -->
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="#"><span class="fb"></span></a></li>
+					<li><a href="#"><span class="google"></span></a></li>
+					<li><a href="#"><span class="twit"></span></a></li>
+				</ul>
+			</nav>		
+			</div>
+			<div class="clearfix"></div>
+			<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-bottom").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-bottom").addClass("fixed");
+				}else{
+					$(".header-bottom").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		</div>
+	 </div>
+	 </div>
+	<!--header-ends-->
+	<!--about-starts-->
+	<div class="about">
+		<div class="container">
+			<div class="about-top contact-top">
+				<h3>A FEW WORDS ABOUT US</h3>
+			</div>
+			<div class="about-bottom">
+				<div class="abt">
+					<div class="about-left">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</div>
+					<div class="about-right">
+						<a href="single.html"><h4>Donec rutrum ante et nisi scelerisque lobortis. Fusce consectetur magna dignissim, cursus erat id, suscipit sapien.</h4></a>
+						<p>Proin blandit mauris nec maximus molestie. Aenean at tempor risus, ut pulvinar sapien. Suspendisse commodo ipsum vel metus semper, vitae mollis ex aliquet. Etiam arcu felis, bibendum eget sollicitudin at, tristique et mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices </p>	
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="abt">
+					<div class="about-left">
+						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+					</div>
+					<div class="about-right">
+						<a href="single.html"><h4>Aenean non egestas felis. Nam in tempor metus. Pellentesque eu placerat libero. Sed a massa commodo placerat.</h4></a>
+						<p>Proin blandit mauris nec maximus molestie. Aenean at tempor risus, ut pulvinar sapien. Suspendisse commodo ipsum vel metus semper, vitae mollis ex aliquet. Etiam arcu felis, bibendum eget sollicitudin at, tristique et mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices </p>	
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="abt">
+					<div class="about-left">
+						<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+					</div>
+					<div class="about-right">
+						<a href="single.html"><h4>Suspendisse molestie risus at molestie faucibus. Donec accumsan bibendum convallis. Maecenas eget purus semper.</h4></a>
+						<p>Proin blandit mauris nec maximus molestie. Aenean at tempor risus, ut pulvinar sapien. Suspendisse commodo ipsum vel metus semper, vitae mollis ex aliquet. Etiam arcu felis, bibendum eget sollicitudin at, tristique et mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices </p>	
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--about-ends-->
+	<!--team-starts-->
+	<div class="team">
+		<div class="container">
+			<div class="team-top contact-top">
+				<h3>OUR TEAM</h3>
+			</div>
+			<div class="team-bottom">
+				<div class="col-md-3 team-left">
+					<img src="images/tm-1.jpg" alt="" />
+					<h4>JOHNSON</h4>
+					<p>Pellentesque suscipit lectus eu neque commodo</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/tm-2.jpg" alt="" />
+					<h4>MARK JOHNSON</h4>
+					<p>Pellentesque suscipit lectus eu neque commodo</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/tm-3.jpg" alt="" />
+					<h4>BRADLEY GROSH</h4>
+					<p>Pellentesque suscipit lectus eu neque commodo</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="images/tm-4.jpg" alt="" />
+					<h4>HELEN TOMPSON</h4>
+					<p>Pellentesque suscipit lectus eu neque commodo</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--team-ends-->
+	<!--mission-starts-->
+	<div class="mission">
+		<div class="container">
+			<div class="mission-top  contact-top">
+				<h3>OUR MISSION</h3>
+			</div>
+			<div class="mission-bottom">
+				<a href="single.html"><img src="images/m-1.jpg" alt="" /></a>
+				<a href="single.html"><h4> Donec rutrum ante et nisi scelerisque lobortis. Fusce consectetur magna dignissim, cursus erat id, suscipit sapien. Suspendisse varius at felis vitae finibus. </h4></a>
+				<p>Suspendisse commodo ipsum vel metus semper, vitae mollis ex aliquet. Etiam arcu felis, bibendum eget sollicitudin at, tristique et mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ornare et augue quis finibus.</p>
+			</div>
+		</div>
+	</div>
+	<!--mission-ends-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-main">
+				<div class="col-md-3 footet-left">
+					<h3>INFORMATION</h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footet-left">
+					<h3>CATEGORIES</h3>
+					<ul>
+						<li><a href="#">Nam tempus bibendum </a></li>
+						<li><a href="#">Ut vulputate nibh eget</a></li>
+						<li><a href="#">In vehicula mattis</a></li>
+						<li><a href="#">Integer sed sagittis ante</a></li>
+						<li><a href="#">Ut fringilla et quam nec</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footet-left">
+					<h3>MY ACCOUNT</h3>
+					<ul>
+						<li><a href="#">My account</a></li>
+						<li><a href="#">My addresses</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footet-left">
+					<h3>NEWSLETTER</h3>
+					<div class="sub-text">
+						<input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}"/>
+						<input type="submit" value="" >
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="footer-text">
+				<p>Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--footer-starts-->
+</body>
+</html>

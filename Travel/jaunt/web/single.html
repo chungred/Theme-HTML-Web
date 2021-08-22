@@ -1,0 +1,260 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaunt  A Travel Category Flat Bootstrap Responsive  Website Template | Single :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jaunt Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Hind:400,300,500,600,700' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+<script>
+$(function() {
+
+	// grab the initial top offset of the navigation 
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+	
+	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('#sticky_navigation').css({ 'position': 'relative' }); 
+		}   
+	};
+	
+	// run our function on load
+	sticky_navigation();
+	
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+	
+	// NOT required:
+	// for this demo disable all links that point to "#"
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); 
+	});
+	
+});
+</script>
+</head>
+<body>
+<!--header-strip start here-->
+<div id="sticky_navigation_wrapper">
+	<div id="sticky_navigation">
+<div class="h-strip">
+	<div class="container">
+		<div class="h-strip-main">
+			<div class="h-strip-logo">
+				<div class="h-strip-left">
+					<h1><a href="index.html">Jaunt</a></h1>
+				</div>
+				<div class="h-strip-right">
+				  <form>
+					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+					<input type="submit" value="">
+				  </form>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+			<!-- top-nav -->
+			<span class="menu"> </span>
+			<div class="cleary"> </div>
+		<div class="top-strip">
+			<nav class="cl-effect-4">
+				<ul class="top-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="packages.html">Packages</a></li>
+					<li><a href="shortcords.html" >Shortcodes</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script>
+					$( "span.menu" ).click(function() {
+					  $( ".top-strip" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+		<!-- top-nav -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<section id="main">
+<!--header strip end here-->
+
+<div class="single">
+	<div class="container">
+		<div class="single-main">
+			<div class="col-md-8 single-top">
+				<div class="col-md-5 sing-slid-grid">		
+			        <div class="flexslider">
+					  <ul class="slides">
+					    <li data-thumb="images/si1.jpg">
+					        <div class="thumb-image"> <img src="images/si1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+					    </li>
+					    <li data-thumb="images/si2.jpg">
+					         <div class="thumb-image"> <img src="images/si2.jpg" data-imagezoom="true" class="img-responsive"> </div>
+					    </li>
+					    <li data-thumb="images/si3.jpg">
+					       <div class="thumb-image"> <img src="images/si3.jpg" data-imagezoom="true" class="img-responsive"> </div>
+					    </li> 
+				 	  </ul>
+			      </div>
+		        </div>	
+	            <div class="col-md-7 information">
+						<h3>$95.00</h3>
+						<h4>ourplane is something Unbelievable.</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+				        <a href="#">MORE DETAILS</a><br>
+				       <select name="cars">
+							<option value="select your location"> Select your location</option>
+							<option value="saab">Paris</option>
+							<option value="fiat">Singapore</option>
+							<option value="audi">Hongkong</option>
+							<option value="audi">Newyork</option>
+						</select><br>
+                       <h5>Also Share on</h5>
+                       <span class="fa"> </span>
+                       <span class="tw"> </span>
+                       <span class="g"> </span>
+				</div>
+			  <div class="clearfix"> </div>
+			 </div>
+			<div class="col-md-4 single-right">
+				<h3>Categories</h3>
+				<ul class="categery">
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Eiusmod tempor</a></li>
+					<li><a href="#">Duis aute irure</a></li>
+					<li><a href="#">Excepteur sint</a></li>
+					<li><a href="#">Nemo ipsam</a></li>
+				</ul>
+				<div class="subscribe">
+					<h3>Archives</h3>
+				   <ul class="magzine-arc">
+					<li><a href="#">June 2014</a></li>
+					<li><a href="#">May 2014</a></li>
+					<li><a href="#">April 2014</a></li>
+					<li><a href="#">January 2014</a></li>
+					<li><a href="#">December 2013</a></li>
+				   </ul>
+				  <div class="clearfix"> </div>
+				</div>
+			</div>
+		  <div class="clearfix"> </div>
+		  <div class="single-bottom">
+		  	  <h5>Related places</h5>
+		  	<div class="col-md-4 single-grid">
+		  		<a href="single.html"><img src="images/s.jpg" alt="" class="img-responsive"></a>
+		  	  <div class="single-bottom-grid">
+		  	  	<h3>120.00 <sub>$</sub> </h3>
+		  	  	<p>Our plane is something Unbelievable</p>
+		  	  </div>
+		  	</div>
+		  	<div class="col-md-4 single-grid">
+		  		<a href="single.html"><img src="images/s1.jpg" alt=""  class="img-responsive"></a>
+		  	  <div class="single-bottom-grid">
+		  	  	<h3>100.00 <sub>$</sub> </h3>
+		  	  	<p>Our plane is something Unbelievable</p>
+		  	  </div>
+		  	</div>
+		  	<div class="col-md-4 single-grid">
+		  		<a href="single.html"><img src="images/s2.jpg" alt=""  class="img-responsive"></a>
+		  	  <div class="single-bottom-grid">
+		  	  	<h3>120.00 <sub>$</sub> </h3>
+		  	  	<p>Our plane is something Unbelievable</p>
+		  	  </div>
+		  	</div>
+		   <div class="clearfix"> </div>
+		  </div>
+		</div>
+	</div>
+</div>
+<!--single page end here-->
+
+<!--single page end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			<div class="col-md-6 footer-left">
+			<h2><a href="index.html">Jaunt</a></h2>
+			</div>
+			<div class="col-md-6 footer-right">
+				<p class="footer-class"> © 2016 Jaunt. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript">
+										$(document).ready(function() {
+											/*
+											var defaults = {
+									  			containerID: 'toTop', // fading element id
+												containerHoverID: 'toTopHover', // fading element hover id
+												scrollSpeed: 1200,
+												easingType: 'linear' 
+									 		};
+											*/
+											
+											$().UItoTop({ easingType: 'easeOutQuart' });
+											
+										});
+									</script>
+						<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+</div>
+</section>
+<!--footer end here--> 
+<!-- slide -->
+<script src="js/imagezoom.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+</script>
+
+</body>
+</html>
